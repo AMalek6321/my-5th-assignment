@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
 </head>
-<body class="bg-gray-400">
+<body class="bg-#3752FD-400">
 
 <div class="container mx-auto p-6">
     <!-- navbar -->
@@ -26,7 +26,7 @@
                 <img src="/assets/checkbox.png" alt="">
                 <span class="font-bold"> <strong>23</strong></span>
             </div>
-            <button class="bg-blue-100 p-2 rounded-lg btn btn-circle btn-outline  ">
+            <button id="changeColorBtn"  class="bg-blue-100 p-2 rounded-lg btn btn-circle btn-outline  ">
                 <img src="/assets/theme-btn.png" alt="">
             </button>
         </div>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
 
-                <div class="col-span-2 card bg-blue-100 shadow-xl ">
+                <div class="col-span-2 card bg-blue-400 shadow-xl ">
                     <figure class="px-10 pt-10">
                         <img src="/assets/board.png" alt="Shoes"  />
                     </figure>
@@ -69,20 +69,20 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                 <div class="card bg-blue-100 shadow-xl">
                     <div class="card-body items-center text-center">
-                        <h2 class="bg-gray-100 rounded-lg p-1 card-title">Shop Ease</h2>
-                        <p>Fix Mobile Button Issue</p>
+                        <h2 class="bg-gray-100 rounded-lg p-1 ">Shop Ease</h2>
+                        <p class="card-title">Fix Mobile Button Issue</p>
                         <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                         <div class="justify-between mt-1">
                             <p class="mb-1">Deadline: 21 March 2025</p>
-                            <button class="btn btn-primary btn-sm">Completed</button>
+                            <button id="shop-ease-btn" class="btn btn-primary btn-sm">Completed</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="card bg-blue-100 shadow-xl">
                     <div class="card-body items-center text-center">
-                        <h2 class="bg-gray-100 rounded-lg p-1 card-title">Soft Pay</h2>
-                        <p>Add Pay Success Modal</p>
+                        <h2 class="bg-gray-100 rounded-lg p-1">Soft Pay</h2>
+                        <p class="card-title">Add Pay Success Modal</p>
                         <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                         <div class=" justify-between mt-1">
                             <p>Deadline: 25 March 2025</p>
@@ -93,8 +93,8 @@
 
                 <div class="card bg-blue-100 shadow-xl">
                     <div class="card-body items-center text-center">
-                        <h2 class="bg-gray-100 rounded-lg p-1 card-title">Meta</h2>
-                        <p>Add new reaction</p>
+                        <h2 class="bg-gray-100 rounded-lg p-1">Meta</h2>
+                        <p class="card-title">Add new reaction</p>
                         <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                         <div class="justify-between mt-1">
                             <p>Deadline: 31 March 2025</p>
@@ -105,8 +105,8 @@
 
                 <div class="card bg-blue-100 shadow-xl">
                     <div class="card-body items-center text-center">
-                        <h2 class="bg-gray-100 rounded-lg p-1 card-title">Programming Hero</h2>
-                        <p>Fix Video Loading Issue</p>
+                        <h2 class="bg-gray-100 rounded-lg p-1">Programming Hero</h2>
+                        <p class="card-title">Fix Video Loading Issue</p>
                         <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                         <div class="justify-between mt-1">
                             <p>Deadline: 21 March 2025</p>
@@ -117,8 +117,8 @@
 
                 <div class="card bg-blue-100 shadow-xl">
                     <div class="card-body items-center text-center">
-                        <h2 class="bg-gray-100 rounded-lg p-1 card-title">Google LLC</h2>
-                        <p>Integrate AI search</p>
+                        <h2 class="bg-gray-100 rounded-lg p-1">Google LLC</h2>
+                        <p class="card-title">Integrate AI search</p>
                         <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                         <div class="justify-between mt-1">
                             <p>Deadline: 01 April 2025</p>
@@ -129,8 +129,8 @@
 
                 <div class="card bg-blue-100 shadow-xl">
                     <div class="card-body items-center text-center">
-                        <h2 class="bg-gray-100 rounded-lg p-1 card-title">Polygon Tech</h2>
-                        <p>Review Ami Probashi Site</p>
+                        <h2 class="bg-gray-100 rounded-lg p-1">Polygon Tech</h2>
+                        <p class="card-title">Review Ami Probashi Site</p>
                         <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                         <div class="justify-between mt-1">
                             <p>Deadline: 5 May 2025</p>
@@ -147,8 +147,8 @@
                     <img src="/assets/activity.png" alt="">
                     <h2 class="card-title ml-4">Activity Log</h2>
                 </div>
-                
                 <button class="btn btn-primary btn-sm">Clear History</button>
+                <p id="text-add"></p>
             </div>
         </div>
 
@@ -157,5 +157,6 @@
 
 </div>
 
+<script src="script/log.js"></script>
 </body>
 </html>
