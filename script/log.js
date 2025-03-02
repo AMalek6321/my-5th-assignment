@@ -155,12 +155,14 @@ document.getElementById('click-card').addEventListener('click', function() {
 
 //  History clear
 
-docoment.getElementById('clear-btn').addEventListener('click', function() {
+const clearHistoryButton = document.getElementById('clearHistoryButton');
+const messageHistory = document.getElementById('messageHistory');
 
-document.getElementById("text-area").innerHTML = "";
+clearHistoryButton.addEventListener('click', () => {
+    messageHistory.innerHTML = '';
 });
     
 
-// new html page
+
 
 
