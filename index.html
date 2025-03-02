@@ -46,7 +46,7 @@
                     </div>
                 </div>
 
-                <div class="col-span-2 card bg-blue-400 shadow-xl ">
+                <div id="click-card" class="col-span-2 card bg-blue-400 shadow-xl ">
                     <figure class="px-10 pt-10">
                         <img src="/assets/board.png" alt="Shoes"  />
                     </figure>
@@ -147,8 +147,11 @@
                     <img src="/assets/activity.png" alt="">
                     <h2 class="card-title ml-4">Activity Log</h2>
                 </div>
-                <button id="clear-btn" class="btn btn-primary btn-sm">Clear History</button>
-                <p id="text-add"></p>
+                <button id="clearHistoryButton" class="btn btn-primary btn-sm">Clear History</button>
+                <div id="messageHistory">
+                   <p id="text-add"></p> 
+                </div>
+                
             </div>
         </div>
 
@@ -156,6 +159,15 @@
    
 
 </div>
+<script>
+    docoment.getElementById('clearHistoryButton').addEventListener('click', function() {
+
+        var messageHistory=document.getElementById('messageHistory');
+        while(messageHistory.firstChild){
+            messageHistory.removeChild(messageHistory.firstChild);
+        }
+});
+</script>
 
 <script src="script/log.js"></script>
 </body>

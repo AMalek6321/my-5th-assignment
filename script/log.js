@@ -125,6 +125,7 @@ document.getElementById('google-btn').addEventListener('click', function() {
 // card 6
 document.getElementById('polygon-btn').addEventListener('click', function() {
   alert('Board Updated Successfully!');
+  alert('Congrates!!! You have completed the All task');
   this.disabled = true;
   var newElement = document.createElement('p');
   newElement.textContent = 'You have completed the task Fix Review Ami Probashi Site';
@@ -144,6 +145,22 @@ document.getElementById('polygon-btn').addEventListener('click', function() {
   document.getElementById('task-count-2').textContent = number;
 });
 
+// click card
 
+document.getElementById('click-card').addEventListener('click', function() {
  
+    window.location.href = "./script/dev.html";
+});
+
+
+//  History clear
+
+docoment.getElementById('clear-btn').addEventListener('click', function() {
+
+document.getElementById("text-area").innerHTML = "";
+});
+    
+
+// new html page
+
 
